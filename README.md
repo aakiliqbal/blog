@@ -1,6 +1,7 @@
 # Blogpost
 
 A simple project for managing and publishing blog posts.
+View the live site at [this link](https://aakiliqbal.github.io/blogpost/).
 
 ## Features
 
