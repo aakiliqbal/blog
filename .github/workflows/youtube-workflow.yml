@@ -1,8 +1,8 @@
 name: Update about.md with latest videos from YouTube
 on:
   schedule:
-    # Runs every hour
-    - cron: "0 * * * *"
+    # Runs once a month, at midnight on the first day
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 jobs:
