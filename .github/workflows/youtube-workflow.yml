@@ -1,4 +1,4 @@
-name: Latest YouTube Videos
+name: Update about.md with latest videos from YouTube
 on:
   schedule:
     # Runs every hour
@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-readme-with-youtube:
-    name: Update this repo's README with latest videos from YouTube
+    name: Update about.md in _tabs with latest videos from YouTube
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,3 +15,4 @@ jobs:
         with:
           comment_tag_name: "YOUTUBE"
           feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UCXK4VE1yIjPBquHIpZi5uMA"
+          readme_path: "_tabs/about.md"
