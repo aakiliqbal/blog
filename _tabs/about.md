@@ -47,12 +47,11 @@ I also enjoy 3D modeling and game development with **Unity** and **Blender**.
 
 ## 📺 Latest YouTube Videos
 <!-- YOUTUBE:START -->
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=JNQkOnVIWXg">Human Fall Flat, Playing With Friends</a></li>
-  <li><a href="https://www.youtube.com/watch?v=Cw4xnSS2xnY">Covid-19 Notifier</a></li>
-  <li><a href="https://www.youtube.com/watch?v=yQMtf6FlZZw">Chrome Dino Simulator</a></li>
-  <li><a href="https://www.youtube.com/watch?v=JOlBLoq_WzI">Hacker Terminal</a></li>
-</ul>
+- [Expense Tracker App &lpar;Finhack2 2022&rpar;](https://www.youtube.com/watch?v=BlXNsrPNS7Y)
+- [Human Fall Flat , Playing With Friends](https://www.youtube.com/watch?v=JNQkOnVIWXg)
+- [Covid-19 Notifier](https://www.youtube.com/watch?v=Cw4xnSS2xnY)
+- [Chrome Dino Simulator](https://www.youtube.com/watch?v=yQMtf6FlZZw)
+- [Hacker Terminal](https://www.youtube.com/watch?v=JOlBLoq_WzI)
 <!-- YOUTUBE:END -->
 <p><a href="https://www.youtube.com/channel/UCXK4VE1yIjPBquHIpZi5uMA">➡️ More videos...</a></p>
 
