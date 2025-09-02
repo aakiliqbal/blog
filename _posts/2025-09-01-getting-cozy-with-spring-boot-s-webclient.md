@@ -12,21 +12,22 @@ image:
     height: 50 px
 ---
 
-**WebClient** is Spring’s modern, reactive HTTP client. It was introduced in **Spring 5** as part of the *WebFlux* module and is considered the successor to *RestTemplate*. WebClient is non-blocking and supports both reactive and traditional applications.
+**WebClient** is Spring’s modern, reactive HTTP client. Introduced in **Spring 5** as part of *WebFlux*, it is the successor to `RestTemplate`.  
+Unlike `RestTemplate`, WebClient is **non-blocking** and works seamlessly in both reactive and traditional applications.
 
 ---
 
 ## Why WebClient?
 
-* Provides a **reactive, non-blocking API**.
-* Can still be used in traditional Spring MVC applications.
-* Designed to be more flexible and powerful compared to `RestTemplate`.
+* **Reactive, non-blocking API**
+* Can be used in both **Spring MVC** and **Spring WebFlux**
+* More **flexible and powerful** than `RestTemplate`
 
 ---
 
 ## Adding the Dependency
 
-To use WebClient, include the WebFlux starter in your project:
+Add the WebFlux starter to your project:
 
 **Maven**
 
@@ -47,7 +48,7 @@ implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
 ## Creating a WebClient
 
-You can create a WebClient in different ways:
+You can create WebClient in multiple ways:
 
 1. **Default instance:**
 
@@ -55,13 +56,13 @@ You can create a WebClient in different ways:
    WebClient client = WebClient.create();
    ```
 
-2. **With a base URL:**
+2. **With base URL:**
 
    ```java
    WebClient client = WebClient.create("http://localhost:8080");
    ```
 
-3. **Using builder with custom configuration:**
+3. **Custom builder:**
 
    ```java
    WebClient client = WebClient.builder()
@@ -75,7 +76,7 @@ You can create a WebClient in different ways:
 
 ## Making Requests
 
-Example of using WebClient in a Spring service:
+Example in a Spring service:
 
 ```java
 @Service
@@ -98,13 +99,11 @@ public class MyService {
 }
 ```
 
-`.retrieve()` is recommended over the older `.exchange()` method.
+`.retrieve()` is preferred over the older `.exchange()`.
 
 ---
 
 ## Working with Parameters and URIs
-
-You can add query parameters and dynamic paths using `uriBuilder`:
 
 ```java
 webClient.get()
@@ -115,8 +114,35 @@ webClient.get()
       .build(productId))
   .retrieve()
   .bodyToMono(Product.class)
-  .block(); // use with caution in reactive flows
+  .block(); // avoid blocking in reactive flows
 ```
+
+---
+
+## Error Handling
+
+WebClient provides flexible error handling. Instead of always relying on `.retrieve()`, you can use `.exchangeToMono()` to handle different status codes explicitly:
+
+```java
+Mono<String> response = webClient.get()
+    .uri("/api/data")
+    .exchangeToMono(res -> {
+        if (res.statusCode().equals(HttpStatus.OK)) {
+            return res.bodyToMono(String.class);
+        } else if (res.statusCode().is4xxClientError()) {
+            return Mono.just("Client error occurred");
+        } else {
+            return res.createException()
+                .flatMap(Mono::error);
+        }
+    });
+```
+
+This approach allows you to:
+
+* Return different results depending on status code  
+* Gracefully handle `4xx` errors  
+* Convert other errors into exceptions with `createException()`
 
 ---
 
@@ -151,23 +177,16 @@ private ExchangeFilterFunction logResponse() {
 
 ### Option 2: Netty Wiretap
 
-When you use **Spring WebFlux** with `spring-boot-starter-webflux`, it runs on top of **Reactor Netty**.
-The **Wiretap** feature in Netty is essentially a **logging mechanism** that lets you see detailed information about HTTP requests and responses.
+With `spring-boot-starter-webflux`, WebClient runs on **Reactor Netty**.  
+Netty’s **Wiretap** logs detailed request/response information:
 
-Think of it as a transparent “tap” into the network traffic.
-
-With Wiretap enabled, you can see:
-
-* HTTP methods and URLs (e.g., `GET /products/1`)
-* Request and response headers
-* Request and response bodies (if text-based and small enough)
-* TCP connection events (connect, disconnect)
+* HTTP methods and URLs  
+* Headers and (if text-based) bodies  
+* TCP events like connect/disconnect  
 
 ---
 
-## How to Enable Wiretap in Spring WebClient
-
-To enable Wiretap, configure the `ReactorClientHttpConnector` with a `HttpClient` that has wiretap enabled:
+## Enabling Wiretap
 
 ```java
 import org.springframework.web.reactive.function.client.WebClient;
@@ -183,9 +202,7 @@ WebClient webClient = WebClient.builder()
 
 ---
 
-## What You’ll See in Logs
-
-When enabled, Wiretap prints logs at the `DEBUG` level. Example:
+## Log Output Example
 
 ```
 [reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] REGISTERED
@@ -194,15 +211,11 @@ When enabled, Wiretap prints logs at the `DEBUG` level. Example:
 [reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] READ: 456B HTTP/1.1 200 OK
 ```
 
-Depending on configuration, request and response payloads may also be shown.
-
 ---
 
 ## Configuring Logging Verbosity
 
-Wiretap relies on your logging configuration. By default, Spring Boot uses `INFO` level, so you won’t see Wiretap logs.
-
-To view them, enable `DEBUG` for Reactor Netty in `application.yml`:
+Enable DEBUG logs for Reactor Netty in `application.yml`:
 
 ```yaml
 logging:
@@ -213,16 +226,17 @@ logging:
 
 ---
 
-## When Should You Use Netty Wiretap?
+## When to Use Netty Wiretap?
 
-* During **development** to understand how WebClient sends/receives requests
-* For **debugging integration issues** with APIs
-* For **performance troubleshooting**, to see connection lifecycle events
+* During **development** to inspect requests/responses  
+* For **debugging API integration issues**  
+* To analyze **connection lifecycle events**  
 
 ---
 
 ## Conclusion
 
-WebClient is the modern alternative to RestTemplate, offering non-blocking, reactive capabilities while remaining flexible enough for traditional applications. It is a recommended choice for new Spring projects.
+WebClient is the modern alternative to RestTemplate, offering **non-blocking, reactive capabilities** while staying flexible for traditional applications.  
+With built-in support for **custom error handling** and **detailed logging** (via filters or Wiretap), it is the recommended HTTP client for new Spring projects.
 
 ---
