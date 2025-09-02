@@ -6,20 +6,41 @@ order: 4
 
 <img src="/assets/header-image.gif" alt="Header" style="display:block;margin:auto;width:100%;max-height:220px;object-fit:cover;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.10);" />
 
-# 👋 Hey, I'm Aakil Iqbal!
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8AB4F8&width=435&lines=%F0%9F%91%8B+Hey%2C+I'm+Mohammad+Aakil+Iqbal!;🚀+Backend+Developer+@+Wipro;🌐+AWS+Certified+Cloud+Practitioner)](https://git.io/typing-svg)
 ---
-
-## 🚀 Backend Developer @ Wipro | AWS Certified Cloud Practitioner
+  <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: center; margin-bottom: 16px;">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=aakiliqbal.aakiliqbal" alt="Visitors" style="height:28px;"/>
+    <img src="https://img.shields.io/github/last-commit/aakiliqbal/aakiliqbal?label=Last%20Updated&logo=github" alt="Last Updated" style="height:28px;"/>
+    <img src="https://img.shields.io/badge/User_Since-July_2019-blue?logo=github" alt="User Since" style="height:28px;"/>
+    <img src="https://img.shields.io/github/followers/aakiliqbal?style=flat&logo=github&label=Followers&color=0e75b6" alt="Followers" style="height:28px;"/>
+  </div>
+---
 
 I'm a backend developer passionate about building scalable APIs, optimizing systems, and exploring new tech.  
 Currently at Wipro, I specialize in **Java**, **Spring Boot**, and **MuleSoft**.  
 I also enjoy 3D modeling and game development with **Unity** and **Blender**.
 
-- 🎓 **B.Tech, ECE** — KIET Group of Institutions (2018–2022)
-- 🌟 **2025 Goals:** Deepen cloud expertise & contribute to open source
-- 🎮 **Fun Fact:** I unwind by sketching or gaming
-- 📍 **Location:** Gurugram, India
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: flex-start; margin-bottom: 24px;">
+  <div style="flex: 1 1 320px; min-width: 260px; max-width: 480px;">
+    <ul>
+      <li>🎓 <strong>B.Tech, ECE</strong> — KIET Group of Institutions (2018–2022)</li>
+      <li>🌟 <strong>2025 Goals:</strong> Deepen cloud expertise &amp; contribute to open source</li>
+      <li>🎮 <strong>Fun Fact:</strong> I unwind by sketching or gaming</li>
+      <li>📍 <strong>Location:</strong> Gurugram, India</li>
+      <li>🤝 Looking to collaborate with other developers</li>
+      <li>👩‍💻 Enjoy exploring FOSS, tech communities, and mod communities</li>
+    </ul>
+  </div>
+  <div style="flex: 1 1 220px; min-width: 220px; max-width: 350px; text-align: center;">
+    <a href="https://github.com/kittinan/spotify-github-profile">
+      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21irrtfluhypc3j7q5nxu4qvi&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true" alt="Spotify Profile" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+    </a>
+    <br/>
+    <a href="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi">
+      <img src="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi&count=2&width=350&unique=true" alt="Spotify Recently Played" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+    </a>
+  </div>
+</div>
 
 ---
 
@@ -68,12 +89,3 @@ I also enjoy 3D modeling and game development with **Unity** and **Blender**.
   <br/>
   <b>Note:</b> These stats reflect my public GitHub contributions and may not fully represent my expertise.
 </details>
-
----
-
-> _Thanks for visiting my Blogpost!_
-
-[website]: https://aakiliqbal.co
-[twitter]: https://twitter.com/aakiliqbal645
-[linkedin]: https://linkedin.com/in/aakiliqbal
-[instagram]: https://instagram.com/aakiliqbal
