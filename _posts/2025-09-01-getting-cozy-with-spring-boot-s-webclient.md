@@ -76,7 +76,7 @@ You can create WebClient in multiple ways:
 
 ## Making Requests
 
-Example in a Spring service:
+### GET Example
 
 ```java
 @Service
@@ -100,6 +100,28 @@ public class MyService {
 ```
 
 `.retrieve()` is preferred over the older `.exchange()`.
+
+### POST Example (With Body)
+
+```java
+Mono<UserResponse> response = webClient.post()
+    .uri("/users")
+    .contentType(MediaType.APPLICATION_JSON)
+    .bodyValue(new UserRequest("John", "Doe"))
+    .retrieve()
+    .bodyToMono(UserResponse.class);
+```
+
+### PUT Example (With Body)
+
+```java
+Mono<Product> updated = webClient.put()
+    .uri("/products/{id}", 42)
+    .contentType(MediaType.APPLICATION_JSON)
+    .bodyValue(new Product("Laptop", 799.99))
+    .retrieve()
+    .bodyToMono(Product.class);
+```
 
 ---
 
@@ -178,11 +200,7 @@ private ExchangeFilterFunction logResponse() {
 ### Option 2: Netty Wiretap
 
 With `spring-boot-starter-webflux`, WebClient runs on **Reactor Netty**.  
-Netty’s **Wiretap** logs detailed request/response information:
-
-* HTTP methods and URLs  
-* Headers and (if text-based) bodies  
-* TCP events like connect/disconnect  
+Netty’s **Wiretap** logs detailed request/response information including **headers and bodies** (for text-based payloads).
 
 ---
 
@@ -195,7 +213,9 @@ import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 
 WebClient webClient = WebClient.builder()
     .clientConnector(new ReactorClientHttpConnector(
-        HttpClient.create().wiretap(true)
+        HttpClient.create()
+            .wiretap("reactor.netty.http.client.HttpClient",
+                LogLevel.DEBUG, AdvancedByteBufFormat.TEXTUAL)
     ))
     .build();
 ```
@@ -207,8 +227,10 @@ WebClient webClient = WebClient.builder()
 ```
 [reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] REGISTERED
 [reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] CONNECT: localhost/127.0.0.1:8080
-[reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] WRITE: 123B GET /api/data HTTP/1.1
+[reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] WRITE: 123B POST /users HTTP/1.1
+[reactor.netty.http.client.HttpClient] CONTENT: {"firstName":"John","lastName":"Doe"}
 [reactor.netty.http.client.HttpClient] [id: 0x1a2b3c4d] READ: 456B HTTP/1.1 200 OK
+[reactor.netty.http.client.HttpClient] CONTENT: {"id":1,"firstName":"John","lastName":"Doe"}
 ```
 
 ---
