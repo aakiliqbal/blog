@@ -2,8 +2,8 @@ name: Compile LaTeX Resume
 
 on:
   push:
-    paths:
-      - "_resume/**.tex" # Only run when the LaTeX file changes
+    paths: # Only run when the LaTeX file changes
+      - "_tabs/**.tex"
   workflow_dispatch: # Allows you to trigger it manually
 
 jobs:
@@ -16,13 +16,13 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: _resume/resume.tex
-          working_directory: _resume
+          root_file: resume.tex
+          working_directory: _tabs
 
       - name: Move PDF to assets
         run: |
           mkdir -p assets
-          mv _resume/resume.pdf assets/resume.pdf
+          mv _tabs/resume.pdf assets/resume.pdf
 
       - name: Commit and push generated PDF
         uses: stefanzweifel/git-auto-commit-action@v5
