@@ -10,6 +10,7 @@ lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone:
+timezone: Asia/Kolkata
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -116,11 +117,11 @@ comments:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: aakiliqbal/blogpost
+    repo: aakiliqbal/blog
     issue_term: title # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: aakiliqbal/blogpost
+    repo: aakiliqbal/blog
     repo_id: R_kgDOPnTkdQ
     category: Q&A
     category_id: DIC_kwDOPnTkdc4Cuzda
@@ -145,10 +146,13 @@ pwa:
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
-    deny_paths: /blogpost/about
+    deny_paths: /blog/about
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
+
+# Allow publishing of future-dated posts (e.g., 2025 dates)
+future: true
 
 # The base URL of your site
 baseurl: "/blog"

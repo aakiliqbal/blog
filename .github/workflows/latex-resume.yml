@@ -1,0 +1,31 @@
+name: Compile LaTeX Resume
+
+on:
+  push:
+    paths:
+      - "_resume/**.tex" # Only run when the LaTeX file changes
+  workflow_dispatch: # Allows you to trigger it manually
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: _resume/resume.tex
+          working_directory: _resume
+
+      - name: Move PDF to assets
+        run: |
+          mkdir -p assets
+          mv _resume/resume.pdf assets/resume.pdf
+
+      - name: Commit and push generated PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-compile LaTeX resume to PDF"
+          file_pattern: "assets/resume.pdf"

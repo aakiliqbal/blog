@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Mohammad Aakil Iqbal
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{charter}
+\input{glyphtounicode}
+
+% Page formatting
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure ATS compatibility
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% Resume Content
+%-------------------------------------------
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\Huge \scshape Mohammad Aakil Iqbal} \\ \vspace{2pt}
+    \small +91-961-606-7913 $|$ \href{mailto:aakiliqbal645@gmail.com}{\underline{aakiliqbal645@gmail.com}} $|$
+    \href{https://linkedin.com/in/aakiliqbal}{\underline{linkedin.com/in/aakiliqbal}} $|$
+    \href{https://github.com/aakiliqbal}{\underline{github.com/aakiliqbal}}
+\end{center}
+
+% Professional Summary
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Backend Developer with 3+ years of experience building and optimizing high-performance RESTful APIs using Spring Boot and MuleSoft in the financial services domain. AWS Certified Cloud Practitioner with hands-on expertise in Redis caching, asynchronous programming, and AI-assisted development to deliver scalable, production-grade microservices.
+    }}
+\end{itemize}
+
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Java, Python, SQL, HTML/CSS \\
+     \textbf{Frameworks}: Spring Boot, Spring Security, MuleSoft, Angular, Hibernate/JPA, WebClient \\
+     \textbf{Databases}: MySQL, Redis \\
+     \textbf{Cloud \& DevOps}: AWS (Certified Cloud Practitioner), Docker, Maven/Gradle, CI/CD \\
+     \textbf{Architecture}: REST APIs, Microservices, Multithreading, Asynchronous Programming, API Design \& Development \\
+     \textbf{AI Tools \& Automation}: Claude Opus, GPT 5.0, MCP Server, GitHub Integration \\
+     \textbf{Tools}: Git, Jira, New Relic, Elasticsearch, ActiveBatch, Postman, Swagger/OpenAPI \\
+     \textbf{Certifications}: \href{https://www.credly.com/badges/242089fc-b58e-4362-b319-7de89c0a47af}{\underline{AWS Certified Cloud Practitioner}} \\
+    }}
+\end{itemize}
+
+% Experience
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Backend Developer}{Mar 2025 -- Present}
+      {Fortune 500 Financial Services Client | Wipro}{Gurugram, India}
+      \resumeItemListStart
+          \resumeItem{Lead architectural decisions and migration of legacy SOAP/MuleSoft APIs to Spring Boot microservices to boost performance and scalability.}
+          \resumeItem{Leveraged AI prompting with agents like Claude Opus and GPT 5.0 for code generation, test case writing, and documentation.}
+          \resumeItem{Integrated MCP (Model Context Protocol) server with GitHub for automated code reviews, PR analysis, and daily task automation.}
+          \resumeItem{Troubleshot critical production issues and managed Jira tickets end-to-end, ensuring system reliability and SLA compliance.}
+          \resumeItem{Collaborated with cross-functional teams, vendors, and stakeholders to resolve integration issues swiftly and maintain smooth project delivery.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Junior Backend Developer}{Mar 2023 -- Mar 2025}
+      {Fortune 500 Financial Services Client | Wipro}{Gurugram, India}
+      \resumeItemListStart
+          \resumeItem{Built and enhanced 15+ RESTful APIs using Spring Boot and MuleSoft, migrating legacy SOAP/MuleSoft APIs to Spring Boot microservices.}
+          \resumeItem{Introduced Redis caching layer for frequently accessed endpoints, cutting API response times by up to 50\% and reducing database load.}
+          \resumeItem{Migrated legacy synchronous RestTemplate to reactive WebClient for non-blocking HTTP calls, improving throughput in high-traffic environments.}
+          \resumeItem{Leveraged asynchronous programming and multithreading in Java to enhance API throughput serving 10K+ concurrent users.}
+          \resumeItem{Monitored production services with New Relic dashboards and ActiveBatch job scheduling, enabling proactive issue detection and 99.9\% uptime.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Java Full Stack Developer Intern}{Apr 2022 -- Aug 2022}
+      {Wipro}{Remote}
+      \resumeItemListStart
+          \resumeItem{Developed a full-stack job portal application with Angular for a responsive front-end and Spring Boot REST APIs for robust backend functionality, backed by MySQL.}
+          \resumeItem{Implemented advanced search features with pagination and secure JWT-based authentication using Spring Security to enhance user experience and data security.}
+          \resumeItem{Wrote unit and integration tests using JUnit and Mockito, achieving 80\%+ code coverage.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Education
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KIET Group of Institutions}{Aug 2018 -- Aug 2022}
+      {B.Tech, Electronics and Communication Engineering}{Ghaziabad, India}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \resumeItemListStart
+         \resumeItem{Named \textbf{Top Performer of the Quarter} at Wipro for delivering high-quality results and exceeding client expectations.}
+         \resumeItem{Earned the \textbf{Victory League} award for leadership and key contributions to a successful major project release.}
+         \resumeItem{Received the \textbf{Habit Flagbearer -- Demonstration Stewardship} award for ensuring timely project delivery and mentoring junior developers.}
+     \resumeItemListEnd
+    }}
+\end{itemize}
+
+\end{document}

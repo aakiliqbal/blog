@@ -34,11 +34,11 @@ I also enjoy 3D modeling and game development with **Unity** and **Blender**.
   </div>
   <div style="flex: 1 1 220px; min-width: 220px; max-width: 350px; text-align: center;">
     <a href="https://github.com/kittinan/spotify-github-profile">
-      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21irrtfluhypc3j7q5nxu4qvi&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true" alt="Spotify Profile" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21irrtfluhypc3j7q5nxu4qvi&amp;cover_image=true&amp;theme=natemoo-re&amp;show_offline=false&amp;background_color=121212&amp;interchange=true&amp;bar_color=53b14f&amp;bar_color_cover=true" alt="Spotify Profile" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
     </a>
     <br/>
     <a href="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi">
-      <img src="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi&count=2&width=350&unique=true" alt="Spotify Recently Played" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+      <img src="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi&amp;count=2&amp;width=350&amp;unique=true" alt="Spotify Recently Played" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
     </a>
   </div>
 </div>
@@ -76,17 +76,3 @@ I also enjoy 3D modeling and game development with **Unity** and **Blender**.
 - [Hacker Terminal](https://www.youtube.com/watch?v=JOlBLoq_WzI)
 <!-- YOUTUBE:END -->
 <p><a href="https://www.youtube.com/channel/UCXK4VE1yIjPBquHIpZi5uMA">➡️ More videos...</a></p>
-
----
-
-## 📊 GitHub Stats
-
-<details>
-  <summary>Check out my stats!</summary>
-  <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: flex-start;">
-    <img src="https://github-readme-stats.vercel.app/api?username=aakiliqbal&show_icons=true&theme=radical" alt="GitHub Stats" style="max-width: 400px; width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aakiliqbal&layout=compact&theme=radical&langs_count=6" alt="GitHub Top-Langs" style="max-width: 320px; width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
-  </div>
-  <br/>
-  <b>Note:</b> These stats reflect my public GitHub contributions and may not fully represent my expertise.
-</details>
