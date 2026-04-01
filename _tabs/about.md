@@ -5,15 +5,15 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-<img src="/assets/header-image.gif" alt="Header" style="display:block;margin:auto;width:100%;max-height:220px;object-fit:cover;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.10);" />
+<img class="no-zoom" src="/assets/header-image.gif" alt="Header" style="display:block;margin:auto;width:100%;max-height:220px;object-fit:cover;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.10);" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8AB4F8&width=435&lines=%F0%9F%91%8B+Hey%2C+I'm+Mohammad+Aakil+Iqbal!;🚀+Backend+Developer+@+Wipro;🌐+AWS+Certified+Cloud+Practitioner)](https://git.io/typing-svg)
 ---
   <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: center; margin-bottom: 16px;">
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=aakiliqbal.aakiliqbal" alt="Visitors" style="height:28px;"/>
-    <img src="https://img.shields.io/github/last-commit/aakiliqbal/aakiliqbal?label=Last%20Updated&logo=github" alt="Last Updated" style="height:28px;"/>
-    <img src="https://img.shields.io/badge/User_Since-July_2019-blue?logo=github" alt="User Since" style="height:28px;"/>
-    <img src="https://img.shields.io/github/followers/aakiliqbal?style=flat&logo=github&label=Followers&color=0e75b6" alt="Followers" style="height:28px;"/>
+    <img class="no-zoom" src="https://visitor-badge.laobi.icu/badge?page_id=aakiliqbal.blog" alt="Visitors" style="height:28px;"/>
+    <img class="no-zoom" src="https://img.shields.io/github/last-commit/aakiliqbal/blog?label=Last%20Updated&logo=github" alt="Last Updated" style="height:28px;"/>
+    <img class="no-zoom" src="https://img.shields.io/badge/User_Since-July_2019-blue?logo=github" alt="User Since" style="height:28px;"/>
+    <img class="no-zoom" src="https://img.shields.io/github/followers/aakiliqbal?style=flat&logo=github&label=Followers&color=0e75b6" alt="Followers" style="height:28px;"/>
   </div>
 ---
 
@@ -34,11 +34,11 @@ I also enjoy 3D modeling and game development with **Unity** and **Blender**.
   </div>
   <div style="flex: 1 1 220px; min-width: 220px; max-width: 350px; text-align: center;">
     <a href="https://github.com/kittinan/spotify-github-profile">
-      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21irrtfluhypc3j7q5nxu4qvi&amp;cover_image=true&amp;theme=natemoo-re&amp;show_offline=false&amp;background_color=121212&amp;interchange=true&amp;bar_color=53b14f&amp;bar_color_cover=true" alt="Spotify Profile" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+      <img class="no-zoom" src="https://spotify-github-profile.kittinanx.com/api/view?uid=21irrtfluhypc3j7q5nxu4qvi&amp;cover_image=true&amp;theme=natemoo-re&amp;show_offline=false&amp;background_color=121212&amp;interchange=true&amp;bar_color=53b14f&amp;bar_color_cover=true" alt="Spotify Profile" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
     </a>
     <br/>
     <a href="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi">
-      <img src="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi&amp;count=2&amp;width=350&amp;unique=true" alt="Spotify Recently Played" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
+      <img class="no-zoom" src="https://spotify-recently-played-readme.vercel.app/api?user=21irrtfluhypc3j7q5nxu4qvi&amp;count=2&amp;width=350&amp;unique=true" alt="Spotify Recently Played" style="max-width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);" />
     </a>
   </div>
 </div>
@@ -48,21 +48,21 @@ I also enjoy 3D modeling and game development with **Unity** and **Blender**.
 ## 🛠️ Skills & Tools
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; margin-bottom: 12px;">
-  <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white" alt="Java"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?logo=spring&logoColor=white" alt="Spring Boot"/>
-  <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white" alt="Angular"/>
-  <img src="https://img.shields.io/badge/MuleSoft-00A1DF?logo=mulesoft&logoColor=white" alt="MuleSoft"/>
-  <img src="https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white" alt="AWS"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" alt="Redis"/>
-  <img src="https://img.shields.io/badge/Unity-100000?logo=unity&logoColor=white" alt="Unity"/>
-  <img src="https://img.shields.io/badge/Blender-F5792A?logo=blender&logoColor=white" alt="Blender"/>
-  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white" alt="Jira"/>
-  <img src="https://img.shields.io/badge/New_Relic-0080B0?logo=newrelic&logoColor=white" alt="New Relic"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white" alt="Java"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Spring_Boot-6DB33F?logo=spring&logoColor=white" alt="Spring Boot"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white" alt="Angular"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/MuleSoft-00A1DF?logo=mulesoft&logoColor=white" alt="MuleSoft"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white" alt="AWS"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" alt="Redis"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Unity-100000?logo=unity&logoColor=white" alt="Unity"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Blender-F5792A?logo=blender&logoColor=white" alt="Blender"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/Jira-0052CC?logo=jira&logoColor=white" alt="Jira"/>
+  <img class="no-zoom" src="https://img.shields.io/badge/New_Relic-0080B0?logo=newrelic&logoColor=white" alt="New Relic"/>
 </div>
 
 ---
