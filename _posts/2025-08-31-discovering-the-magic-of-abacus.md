@@ -4,7 +4,7 @@ description: A fun dive into the abacus — its history, basics, and how to use 
 date: 2025-08-31 20:01 +0530
 categories: [MATHEMATICS, ABACUS]     # your category
 tags: [ABACUS, TOOLS]   # tags
-media_subpath: /assets/img/2025-08-31-discovering-the-magic-of-abacus
+media_subpath: /assets/img/abacus
 image:
     path: /abacus-header.png
     alt: Header image
@@ -78,4 +78,3 @@ The abacus is more than just a calculator — it’s a bridge between ancient wi
 Next time I visit my niece, I’ll be ready. And this time, maybe I’ll impress her by sliding beads with confidence instead of confusion.
 
 *P.S.: Dear niece, if you’re reading this — your uncle has leveled up.*
-

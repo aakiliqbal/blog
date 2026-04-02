@@ -5,7 +5,7 @@ description: "An introduction to using Spring Boot’s WebClient—the modern, r
 date: 2025-09-01 10:00:00 +0530
 categories: [SPRING, WEBCLIENT]
 tags: [PROGRAMMING]
-media_subpath: /assets/img/2025-09-01-getting-cozy-with-spring-boot-s-webclient
+media_subpath: /assets/img/webclient
 image:
     path: /webclient-header.png
     alt: Header image
