@@ -173,6 +173,7 @@ The Native Method Stack stores execution details of native methods written in la
 - Thread-specific memory area
 - Depends on underlying OS
 - Separate from Java Stack
+
 ---
 
 ## Step 4 — Execution Engine
