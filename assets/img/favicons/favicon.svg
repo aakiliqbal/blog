@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Code Terminal Icon</title>
+  <desc id="desc">A futuristic browser favicon showing a neon terminal window with code prompt symbols.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#164e63"/>
+      <stop offset="0.48" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="code" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <filter id="glow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#22d3ee" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#8b5cf6" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="408" cy="102" r="108" fill="#22d3ee" opacity="0.13"/>
+  <circle cx="102" cy="420" r="128" fill="#8b5cf6" opacity="0.12"/>
+
+  <g opacity="0.15" stroke="#e0f2fe" stroke-width="4" stroke-linecap="round">
+    <path d="M80 126 H432"/>
+    <path d="M80 250 H432"/>
+    <path d="M80 374 H432"/>
+    <path d="M132 76 V436"/>
+    <path d="M256 76 V436"/>
+    <path d="M380 76 V436"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <rect x="74" y="112" width="364" height="288" rx="34" fill="url(#panel)" stroke="url(#edge)" stroke-width="18"/>
+    <rect x="96" y="136" width="320" height="50" rx="18" fill="#020617" opacity="0.86"/>
+    <circle cx="128" cy="161" r="10" fill="#fb7185"/>
+    <circle cx="162" cy="161" r="10" fill="#facc15"/>
+    <circle cx="196" cy="161" r="10" fill="#34d399"/>
+
+    <path d="M154 286 L208 242 L154 198" fill="none" stroke="url(#code)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M244 320 L286 206" fill="none" stroke="#f8fafc" stroke-width="30" stroke-linecap="round" opacity="0.96"/>
+    <path d="M320 198 L374 242 L320 286" fill="none" stroke="url(#code)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M168 344 H344" stroke="#22d3ee" stroke-width="24" stroke-linecap="round"/>
+  </g>
+</svg>
